@@ -1,0 +1,36 @@
+{
+  "name": "@32co/react-chat",
+  "private": true,
+  "version": "0.0.0",
+    "files": [
+      "dist"
+  ],
+  "main": "./dist/react-chat.umd.js",
+  "module": "./dist/react-chat.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+      ".": {
+          "import": "./dist/react-chat.es.js",
+          "require": "./dist/react-chat.umd.js"
+      }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --watch",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^1.2.0"
+  }
+}
